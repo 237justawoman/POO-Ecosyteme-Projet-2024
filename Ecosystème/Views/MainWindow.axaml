@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Ecosystème.ViewModels"
+        xmlns:models="clr-namespace:Ecosystème.Models"
+        xmlns:d="http://schemas.microsoft.com/expression.blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="Ecosystème.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Ecosystème">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Window.Styles>
+        <Style Selector="ItemsControl > ContentPresenter" x:DataType="models:LifeForm">
+            <Setter Property="Canvas.Left" Value="{Binding PositionX}" />
+            <Setter Property="Canvas.Top" Value="{Binding PositionY}" />
+        </Style>
+    </Window.Styles>
+
+    <Grid>
+        <!-- Image de fond -->
+        <Image Source="/Assets/Herbe.jpg" Stretch="Fill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        
+        <!-- ItemsControl pour afficher les entités -->
+        <ItemsControl ItemsSource="{Binding Entities}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.DataTemplates>
+                <DataTemplate DataType="models:Carnivore">
+                    <TextBlock Text="{Binding Emoji}" FontSize="50" />
+                </DataTemplate>
+                
+                <DataTemplate DataType="models:Herbivore">
+                    <TextBlock Text="{Binding Emoji}" FontSize="50" />
+                </DataTemplate>
+                
+                <DataTemplate DataType="models:Plant">
+                    <TextBlock Text="{Binding Emoji}" FontSize="50" />
+                </DataTemplate>
+                
+                <DataTemplate DataType="models:Meat">
+                    <TextBlock Text="🥩" FontSize="50" />
+                </DataTemplate>
+                
+                <DataTemplate DataType="models:OrganicWaste">
+                    <TextBlock Text="💩" FontSize="35" />
+                </DataTemplate>
+            </ItemsControl.DataTemplates>
+        </ItemsControl>
+    </Grid>
+</Window>
