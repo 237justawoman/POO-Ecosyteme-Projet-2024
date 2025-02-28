@@ -19,7 +19,7 @@ La représentation des espèces est porté sur des emojis.
 
 Le diagramme de classes ci-dessous représente la structure du projet, avec les différentes entités et leurs relations.
 <p align="center">
-        <img src="/Diagrammes/Diagramme_De_Classe.png" width="700">
+        <img src="Ecosystème/Diagrammes/Diagramme_De_Classe.png" width="700">
 </p>
 
 
@@ -35,7 +35,7 @@ Le diagramme de classes ci-dessous représente la structure du projet, avec les 
 
 Le diagramme de séquence ci-dessous illustre le scénario d'un carnivore chassant un herbivore.
 <p align="center">
-        <img src="/Diagrammes/Diagramme_De_Sequence.png" width="700">
+        <img src="Ecosystème/Diagrammes/Diagramme_De_Sequence.png" width="700">
 </p>
 
 ### Explication :
@@ -49,7 +49,7 @@ Le diagramme de séquence ci-dessous illustre le scénario d'un carnivore chassa
 
 Le diagramme suivant montre le cycle de vie des formes de vie dans l'écosystème.
 <p align="center">
-        <img src="/Diagrammes/Diagramme_D_Activite.png" width="700">
+        <img src="Ecosystème/Diagrammes/Diagramme_D_Activite.png" width="700">
 </p>
 
 ### Explication :
