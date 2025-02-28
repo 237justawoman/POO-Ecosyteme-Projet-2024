@@ -37,7 +37,7 @@ namespace Ecosystème.Models
             foreach (var waste in absorbableWaste.ToList()) // Créer une copie pour éviter modification pendant l'itération
             {
                 Energy += 10; // Augmenter l'énergie
-                ecosystem.RemoveOrganicWaste(waste); // Suppression de l'élément après l'absorption
+                ecosystem.RemoveLifeForm(waste); // Suppression de l'élément après l'absorption
             }
         }
 

@@ -1525,11 +1525,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adminlocal\\Ecosystème\\Ecosystème\\Ecosystème.csproj",
+      "projectUniqueName": "C:\\Users\\adminlocal\\OneDrive\\Documents\\GitHub\\POO-Ecosyteme-Projet-2024\\Ecosystème\\Ecosystème.csproj",
       "projectName": "Ecosystème",
-      "projectPath": "C:\\Users\\adminlocal\\Ecosystème\\Ecosystème\\Ecosystème.csproj",
+      "projectPath": "C:\\Users\\adminlocal\\OneDrive\\Documents\\GitHub\\POO-Ecosyteme-Projet-2024\\Ecosystème\\Ecosystème.csproj",
       "packagesPath": "C:\\Users\\adminlocal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adminlocal\\Ecosystème\\Ecosystème\\obj\\",
+      "outputPath": "C:\\Users\\adminlocal\\OneDrive\\Documents\\GitHub\\POO-Ecosyteme-Projet-2024\\Ecosystème\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adminlocal\\AppData\\Roaming\\NuGet\\NuGet.Config"
