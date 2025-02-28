@@ -108,6 +108,15 @@ Le système est ouvert à l'extension, mais fermé à la modification.
 - Si on veut ajouter une nouvelle espèce (ex: `Omnivore`), on peut créer une nouvelle classe sans modifier `LifeForm`.
 - Les classes existantes n'ont pas besoin d'être réécrites ou modifiées, ce qui assure la stabilité du code.
 
+## Exécution du Code 
+Au run du projet, on y voit bien l'affichage des entités mais aucune simulation jusqu'ici; j'emettrai donc comme hypothèse qu'il manque dans le fichier MainWindowViewModel.cs une fonction de mis à jour constate de l'interface après un certain temps pour enclencher les actions établis notamment dans le fichier Ecosystem.cs. 
+(Par manque de temps, l'écéance étant arrivé, ceci ne pourra se faire dans les temps)
+
+On peut y voir cet interface : 
+<p align="center">
+        <img src="Ecosystème/Assets/interface.png" width="700">
+</p>
+
 ## Conclusion
 
 Ce projet d'écosystème illustre un modèle extensible et bien structuré en C# avec Avalonia UI. Il respecte les principes SOLID pour garantir une maintenance et une évolutivité optimales.
